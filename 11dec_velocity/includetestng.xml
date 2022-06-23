@@ -1,0 +1,16 @@
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+<groups>
+<runs>
+<exclude name="sanity"/>
+<include name="smoke"/>
+</runs>
+</groups>
+    <classes>
+      <class name="Testng_keyword.Invocation"/>
+      <class name="Testng_keyword.Methods"/>
+      <class name="Testng_keyword.DependOn"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

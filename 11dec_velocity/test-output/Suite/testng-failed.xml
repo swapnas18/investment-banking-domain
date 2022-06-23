@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="testparallel1(failed)">
+    <classes>
+      <class name="TEStNG.ParrallelExecution">
+        <methods>
+          <include name="VCTCLaunch"/>
+        </methods>
+      </class> <!-- TEStNG.ParrallelExecution -->
+    </classes>
+  </test> <!-- testparallel1(failed) -->
+  <test thread-count="5" parallel="tests" name="TestParallel2(failed)">
+    <classes>
+      <class name="TEStNG.ParrellelExecution2">
+        <methods>
+          <include name="facebooklounch"/>
+        </methods>
+      </class> <!-- TEStNG.ParrellelExecution2 -->
+    </classes>
+  </test> <!-- TestParallel2(failed) -->
+  <test thread-count="5" parallel="tests" name="Test parrallel2(failed)">
+    <classes>
+      <class name="TEStNG.ParrellelExecution3">
+        <methods>
+          <include name="KiteLogin"/>
+        </methods>
+      </class> <!-- TEStNG.ParrellelExecution3 -->
+    </classes>
+  </test> <!-- Test parrallel2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
